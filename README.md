@@ -9,13 +9,13 @@ The StrOutputParser is the simplest output parser in LangChain. It is used to pa
 of a Language Model (LLM) and return it as a plain string.
 
 
-The JsonOutputPraser helps to parse the output of llm into json to enforce schema but no validation
+The JsonOutputPraser helps to parse the output of llm into json(no schema)
 
 
 StructuredOutputParser is an output parser in LangChain that helps extract structured JSON
 data from LLM responses based on predefined field schemas.
 It works by defining a list of fields (ResponseSchema) that the model should return, ensuring
-the output follows a structured format.
+the output follows a structured format.(no validation)
 
 
 PydanticOutputParser is a structured output parser in LangChain that uses Pydantic models to enforce schema validation when processing LLM responses.
@@ -27,4 +27,5 @@ Type Safety - Automatically converts LLM outputs into Python objects.
 Easy Validation → Uses Pydantic's built-in validation to catch incorrect or missing data.
 
 Seamless Integration Works well with other LangChain components.
+
 
